@@ -1,0 +1,12 @@
+#header {
+    background: teal;
+    color: whitesmoke;
+    height: 100px;
+    padding: 50px;
+}
+.link {
+    background: green;
+    color: wheat;
+    padding: 5px;
+    text-decoration: none;
+}
