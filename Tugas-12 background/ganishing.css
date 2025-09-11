@@ -1,0 +1,26 @@
+header {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+      font-family: "Libertinus Serif Display", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0,100,90);
+}
+
+img {
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
