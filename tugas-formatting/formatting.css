@@ -1,0 +1,27 @@
+p {
+    border-style: dashed;
+    border-width: 5px;
+}
+
+img {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: aqua;
+    
+
+}
+
+li {
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.gambar-border {
+     border-radius: 5px;
+    border-style: solid;
+    border-color: aqua;
+}
+
+.gambar-border:hover {
+    border-color: black;
+}
