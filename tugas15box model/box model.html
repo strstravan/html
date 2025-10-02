@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+     display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-bottom: 40px;
+}
+
+.card {
+   
+    width: 320px;
+    padding: 10px;
+    border: 5px solid;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-2 {
+    box-sizing: border-box;
+    width: 320px;
+    padding: 10px;
+    border: 5px solid;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="card">
+                <img src="sepatu lari.webp" width="300px">
+                <h3>Ehem | Sepatu Gemdut</h3>
+                <p>Sepatu brand lokal berkualitas tahan segala medan</p>
+                <button>Tambah Ke Keranjang</button>
+    </div>
+
+    <div class="card-2">
+        <img src="sepatu.jpeg" width="300px">
+        <h3>Ventela | Sepatu kalcer</h3>
+        <p>Sepatu Pilihan Anak Muda Gen Z</p>
+        <button>Tambah Ke Keranjang</button>
+    </div>
+    </div>
+
+
+    <div class="feedback">
+        <div class="feedback-1">
+            <h4>Rating</h4>
+            <p><strong>dimas raga</strong> - Rating ★★★★★</p>
+            <p>"sya sanagat berkenan dengan produk ini, apa lg prdk lkl, keceee!!!!"</p>
+        </div>
+
+    <div class="feedback-2">
+        <h4>Rating</h4>
+        <p><strong>ananda kella</strong> - Rating ★★★★★</p>
+        <p>"bgus bet suka sama prroduknya! Smgt bg!!!"</p>
+    </div>
+    </div>
+</body>
+</html>
