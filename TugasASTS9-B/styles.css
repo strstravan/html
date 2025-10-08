@@ -1,0 +1,30 @@
+.Judul {
+  background-color: rgb(78, 78, 188);
+  text-align: center;
+}
+section {
+  background-color: rgb(179, 179, 255);
+}
+.keahlian {
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+footer {
+  background-color: rgb(148, 148, 255);
+  text-align: center;
+}
+.profil {
+  background-color: rgb(179, 179, 255);
+  align-items: center;
+}
+p {
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Kontak {
+  color: blue;
+}
