@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .header-sticky {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .card-image-container {
+            position: relative;
+        }
+        .card-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .new-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+        .card-tag {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .card-paragraph {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .placeholder-box {
+            background-color: #e0e0e0;
+            height: 150px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .placeholder-box::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #a0c4ff;
+            top: 20px;
+            left: 20px;
+            transform: rotate(15deg);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        .placeholder-box::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #72a0ff;
+            top: 30px;
+            left: 40px;
+            transform: rotate(-10deg);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-sticky">
+        Header Sticky
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://via.placeholder.com/800x400" alt="Card Image" class="card-image">
+                <span class="new-badge">New</span>
+            </div>
+            <div class="card-content">
+                <h2 class="card-title">Judul Card</h2>
+                <span class="card-tag">Tag</span>
+                <p class="card-paragraph">Paragraf (Konten)</p>
+            </div>
+        </div>
+
+        <div class="placeholder-box"></div>
+
+        <!-- The following paragraphs are added to make the page scrollable, as suggested in the image. -->
+        <p>Tambahkan paragraf-paragraf agar halaman bisa di-scroll...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+</body>
+</html>
