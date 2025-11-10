@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Website Pribadi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* Navbar */
+header {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo span {
+  color: #6C63FF;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #6C63FF;
+}
+
+.btn {
+  background: #6C63FF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  background: #f9f9ff;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text span {
+  color: #6C63FF;
+}
+
+.hero-img img {
+  width: 380px;
+  border-radius: 12px;
+}
+
+/* Skills */
+.skills {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+/* About */
+.about {
+  padding: 80px 0;
+  background: #f9f9ff;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-img img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.portfolio-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 300px;
+  padding-bottom: 15px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Contact */
+.contact {
+  padding: 80px 0;
+  background: #f9f9ff;
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;x   
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;    
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.socials a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6C63FF;
+}
+
+  </style>
+  <!-- Navbar -->
+  <header>
+    <div class="container nav">
+      <h2 class="logo">My<span>Portofolio</span></h2>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h4>Halo Semua 👋, Saya</h4>
+        <h1>Membangun <span>Website</span><br> Impian Anda dengan<br> Kualitas Terbaik</h1>
+        <p>Saya adalah Web Developer profesional yang siap membantu Anda membuat website impian.</p>
+        <a href="#" class="btn">Hubungi Saya</a>
+      </div>
+      <div class="hero-img">
+        <img src="/tugasslicing/Group 11 1.png" alt="Foto Profil">
+      </div>
+    </div>
+  </section>
+
+  <!-- Keahlian -->
+  <section class="skills">
+    <div class="container">
+      <h2>Keahlian Saya</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Creative Direction</h3>
+          <p>Mengatur alur kreatif untuk menghasilkan desain yang menarik dan efektif.</p>
+        </div>
+        <div class="skill-card">
+          <h3>UI & UX Design</h3>
+          <p>Menciptakan pengalaman pengguna yang menyenangkan dan intuitif.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Web Development</h3>
+          <p>Membangun website modern, cepat, dan responsif.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section class="about">
+    <div class="container about-content">
+      <div class="about-img">
+        <img src="About Me.png" alt="Foto Saya">
+      </div>
+      <div class="about-text">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang Web Developer dengan pengalaman lebih dari 5 tahun dalam membangun berbagai jenis website mulai dari company profile, e-commerce, hingga portfolio profesional. Saya percaya bahwa desain dan performa website harus berjalan seimbang.</p>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <div class="container">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="imageee.png" alt="Project 1">
+          <h4>E-Commerce Website</h4>
+          <p>Website toko online modern dan cepat.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="Imag.png" alt="Project 2">
+          <h4>Portfolio Pribadi</h4>
+          <p>Website personal branding profesional.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="imagee.png" alt="Project 3">
+          <h4>Blog Pribadi</h4>
+          <p>Tempat menulis dan berbagi ide menarik.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact"> 
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Nama" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="No. Telepon" required>
+          <input type="text" placeholder="Subjek" required>
+        </div>
+        <textarea placeholder="Pesan..." rows="5" required></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>© 2025 MyPortfolio. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
