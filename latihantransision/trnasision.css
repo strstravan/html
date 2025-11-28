@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  translate: 0 100px;
+  transition: transform 0.3s ease;
+  
+}
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-10px);
+}
+.image img {
+  border-radius: 999px;
+  width: 200px;
+  height: auto;
+}
+.image img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.text {
+  padding: 15px;
+}
+.btn {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: gray;
+}
+.btn:active {
+  background-color: darkgray;
+  content: "Mohon Bersabar...";
+
+}
+
+
+
